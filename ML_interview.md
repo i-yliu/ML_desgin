@@ -3,7 +3,17 @@ Problem Definition:
 
 Data 数据处理:
 ======
- * 如何处理缺失数据(missing value)? 各种处理方法有什么利弊？
+ * 如何处理[缺失数据(missing value)](https://www.zhihu.com/question/26639110)? 各种处理方法有什么利弊？
+   * 缺失值过多
+     删除
+     分为两类：有，或 没有
+   * 较少
+     用0表示
+     均值
+     上下数据填充
+     差值法
+     
+      
  * 如何将描述变量(categorical variables)转为连续变量(continuous variables)?
    * 如何处理有序变量？
    * 如何处理无序变量？
@@ -13,8 +23,43 @@ Evaluation 评估:
   * Model selection:
     * split the dataset into **training set** and **test** and **(cross) validation set** (Random sampling 60% T 20% CV 20%T)
     * Learn parameter from training data
-    * compute test set error (MSE for regresssion | cross entory, misclassification error[https://www.coursera.org/learn/machine-learning/supplement/aFpD3/evaluating-a-hypothesis] for classification/logistic regression)
+    * compute test set error (MSE for regresssion | cross entory, [misclassification error](https://www.coursera.org/learn/machine-learning/supplement/aFpD3/evaluating-a-hypothesis) for classification/logistic regression)
     * Use Validation set to 
+    
+    * **[Bias/Variance](https://www.coursera.org/learn/machine-learning/lecture/yCAup/diagnosing-bias-vs-variance)**
+      high train + high val -> high bias -> underfit
+      low train + high val -> high variance -> overfit
+      
+      **Regularization with Linear regression** 
+      Different regularization parameter lambda
+      
+      **Learning Curve
+
+
+  * 试解释什么是欠拟合与过拟合？如何应对这两种情况？
+  * 什么是偏差与方差分解(Bias Variance Decomposition)？与欠拟合和过拟合有什么联系？
+    * generalization error: 泛化误差可分解为偏差、方差与噪声之和
+    * Bias
+    * Variance
+    * Bias、Variance和K-fold的关系。
+       
+  
+  * Once we have done some trouble shooting for errors in our predictions by: 
+    
+    Getting more training examples -> fix high variance (model overfitting)
+    
+    Trying smaller sets of features -> fix high variance(model overfitting)
+    
+    Trying additional features -> fix high bias 
+    
+    Trying polynomial features -> fix high bias
+    
+    Increasing λ -> fix high bias
+    
+    Decreasing λ -> fix high variance
+    
+   * Model selection:
+            
     
   * 分类模型评估方法？
   * 回归问题评估方法？
@@ -44,30 +89,7 @@ Model 模型:
 =======
   
   
-Model 模型解释：
-=======
 
-  * 试解释什么是欠拟合与过拟合？如何应对这两种情况？
-  * 什么是偏差与方差分解(Bias Variance Decomposition)？与欠拟合和过拟合有什么联系？
-    * generalization error: 泛化误差可分解为偏差、方差与噪声之和
-    * Bias
-    * Variance
-    * Bias、Variance和K-fold的关系。
-       
-  
-  * Once we have done some trouble shooting for errors in our predictions by: 
-    
-    Getting more training examples
-    
-    Trying smaller sets of features
-    
-    Trying additional features
-    
-    Trying polynomial features
-    
-    Increasing or decreasing λ
-    
-   * Model selection:
    
    
 Experimentation 实验：
@@ -81,6 +103,28 @@ Calibration 校准：
 ========
   * Deep Neural Networks for YouTube Recommendations[https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf]
   * 
+  * [Spam classifier](https://www.coursera.org/learn/machine-learning/lecture/4h5X4/prioritizing-what-to-work-on)
+     * Spam vs non Spam
+     * x = features of email; y = spam (1) or not spam (0)
+     * choose 100 words indicative of spam/not spam
+       
+       name day, discount, now, .....
+       
+       x = \[0 1 1 0 . ... 1 ..\]
+       
+       In practice, use the most used 100 words in training set as features.
+     
+     * Building a spam classifier:
+     
+        How could you spend your time to improve the accuracy of this classifier?
+        Collect lots of data (for example "honeypot" project but doesn't always work)
+        Develop sophisticated features (for example: using email header data in spam emails)
+        Develop algorithms to process your input in different ways (recognizing misspellings in spam).
+         
+         
+         
+         
+       
 
 其他问题：
 ========
@@ -98,7 +142,7 @@ Brand Safty Related:
   * * https://www.searchenginewatch.com/2019/02/22/google-youtube-brand-safety-next/
   * https://www.youtube.com/watch?v=UA29hlsamSE&feature=emb_title
   
-Decision Tree [https://cuijiahua.com/blog/2017/11/ml_2_decision_tree_1.html]:
+[Decision Tree](https://cuijiahua.com/blog/2017/11/ml_2_decision_tree_1.html):
 ======
   * 
 
