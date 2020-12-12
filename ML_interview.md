@@ -49,6 +49,12 @@ Model 模型解释：
 
   * 试解释什么是欠拟合与过拟合？如何应对这两种情况？
   * 什么是偏差与方差分解(Bias Variance Decomposition)？与欠拟合和过拟合有什么联系？
+    * generalization error: 泛化误差可分解为偏差、方差与噪声之和
+    * Bias
+    * Variance
+    * Bias、Variance和K-fold的关系。
+       
+  
   * Once we have done some trouble shooting for errors in our predictions by: 
     
     Getting more training examples
@@ -90,8 +96,9 @@ Brand Safty Related:
 =======
   * avoid ad placements next to brand-inappropriate or dangerous content
   * * https://www.searchenginewatch.com/2019/02/22/google-youtube-brand-safety-next/
+  * https://www.youtube.com/watch?v=UA29hlsamSE&feature=emb_title
   
-Decision Tree[https://cuijiahua.com/blog/2017/11/ml_2_decision_tree_1.html]:
+Decision Tree [https://cuijiahua.com/blog/2017/11/ml_2_decision_tree_1.html]:
 ======
   * 
 
