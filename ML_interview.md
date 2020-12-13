@@ -34,6 +34,8 @@ Evaluation 评估:
       Different regularization parameter lambda
       
       **Learning Curve
+      
+      **Precision/Recall/Confusion matrix**
 
 
   * 试解释什么是欠拟合与过拟合？如何应对这两种情况？
@@ -102,7 +104,115 @@ Calibration 校准：
 设计问题：
 ========
   * Deep Neural Networks for YouTube Recommendations[https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf]
-  * 
+  
+  * [Recommendation system](https://www.coursera.org/learn/machine-learning/lecture/Rhg6r/problem-formulation)
+    
+    Content based recommender systems
+    
+    Collaborative Filtering
+      users -> \[0 5 0\]
+      
+      given x1 x2 .... xn (and movie ratings)
+        can estimate theta (user)
+       
+      given theta (user)
+        can estimate movie features
+       
+      theta -> x -> theta -> x ......
+      
+      1. Initialize x, theta
+      2. minimize J using gradient descent
+        theta transpose x(i)
+           
+        X
+        THETA
+        
+      Low rank matrix factorization 
+      
+      * Finding related movies
+        
+        find movies j related to moive i?
+        small ||xi - xj|| similar
+        
+        **Mean Normalization**
+        
+  * Anomaly detection
+      Density estimation
+      
+      Fraud detection 
+        xi = features of user i's activities
+        Model p(x) from data
+        identify unusual users by checking which have p(s) < episinon
+        
+      Manufacturing:
+      
+      Monitoring computers in data center
+      
+      Guassian Distribution
+      
+      Density estimation:
+        
+        p(x) = p(x1    )p(x2    )p(x3    )...........p(xn    )
+      
+      Evaluation:
+      
+        fit p(x)
+        
+        on a cross valiadation/test example x, predict
+        
+        Precision/Recall
+        
+        F1 score
+        
+        Different threshold
+        
+      Anomaly detection vs. Supervised learning:
+      
+        Very small number of positive examples (y = 1, anomaly)
+
+        Large number of negative (y = 0, normal)
+
+        Different anomalies: Hard for any alogirhtm to learn from positive examples;
+
+        Future anomalies may look nothing like any of the anomalous examples
+      
+        Supervised: Enough positive examples for algorithm to get a sense of what positive exampoles like
+        Supervised: Large number of positive and negative examples
+        
+     Features to Use:
+      
+        Non-gaussian features -> log(x)/or other transform  make it more gaussian
+        
+        
+     Error Analysis for anomaly detection:
+        
+        what px large for normal examples x
+            px small for anomalous examples x
+        
+        Most commom problem: both large: may need new feature to itendtify
+        
+     Origional model vs multivariate Gaussian
+     
+     
+        
+        
+      
+      
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+  
+    
+        
+    
+    
   * [Spam classifier](https://www.coursera.org/learn/machine-learning/lecture/4h5X4/prioritizing-what-to-work-on)
      * Spam vs non Spam
      * x = features of email; y = spam (1) or not spam (0)
@@ -117,12 +227,48 @@ Calibration 校准：
      * Building a spam classifier:
      
         How could you spend your time to improve the accuracy of this classifier?
+        
         Collect lots of data (for example "honeypot" project but doesn't always work)
+        
         Develop sophisticated features (for example: using email header data in spam emails)
+        
         Develop algorithms to process your input in different ways (recognizing misspellings in spam).
          
+      * Error Analysis
          
+         Manual inspect
          
+         Numerical evaluation
+         
+      * Error metrics for Skewed Classes
+       
+         Cancer classification example (1% error on test set; only 0.5 % of patients have cancer)
+         
+         **Precision/Recall/Confusion matrix/F-score**
+         Trading Off Precision and Recall
+         
+       * Data For Machine Learning
+         
+         How much data we need for training
+            
+            Assueme features are enough for predicting
+            
+            -> J train small
+            -> J val small 
+            
+         Perceptraon
+         
+         Winnow x
+         
+         memory-based
+         
+         Naive-Base
+         
+        
+        
+        
+        
+        
          
        
 
