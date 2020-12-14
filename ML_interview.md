@@ -86,6 +86,22 @@ Feature 特征:
   
   * 特征选择：包裹式，过滤式，嵌入式
   * 数据压缩：主成分分析，自编码等
+    
+    * PCA:
+      
+      Find a vector on to which to project the data so as to minimize the projection errer
+      
+      PCA is not lieaner regression 
+      
+      Covariance matrix = 1/m sum(xi)\*(xi)T
+      
+      \[U,S,V] = SVD (covariance matrix)
+      
+      
+      
+  
+  
+ 
 
 Model 模型:
 =======
