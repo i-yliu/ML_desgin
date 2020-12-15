@@ -106,11 +106,21 @@ Feature 特征:
 Model 模型:
 =======
   * Decision Trees
+    * ID3
     
-  
+    * C4.5
+    
+    *  [CART](https://www.youtube.com/watch?v=qrDzZMRm_Kw) (二叉树)
+       GINI（分类）
+       MSE(找最优切分点， 遍历x)
+       
+       prune:
+        计算子数的损失函数， Ca(T) = C(T) + a|T| (类似regularization)
+        从T(0) 开始
+        
+          
 
-   
-   
+
 Experimentation 实验：
 =======
 
