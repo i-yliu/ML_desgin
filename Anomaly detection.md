@@ -2,7 +2,14 @@ Filamentous Structures in Microscopic images
 ======
  Image size (1024x1024) filaments width 2 pixels to 5 pixels; intersections is the hardest part
  
- 
+
+Attention
+=====
+The problem of long sequences 
+
+
+
+
  
 
 
@@ -10,17 +17,34 @@ Filamentous Structures in Microscopic images
 
 [Explainable Deep One-Class Classification](https://arxiv.org/pdf/2007.01760.pdf)
 
+Traditional methods
+=======
+
+
+
 Classification of Anomalous Images
 =======
 
+
 Segmentation of Anomalous Regions
 =======
-
+* representation learning/contrastive loss
+   Uninformed  Students:  Student–Teacher  Anomaly  Detectionwith  Discriminative  Latent  Embeddings
+   
 * Generative Adversarial Networks
 
-* Autoencoder
+* Generative models/Probablistic models:
+   PixelCNN++
+
+* Reconstruction based/Autoencoder:
+ * [Improving  Unsupervised  Defect  Segmentationby  Applying  Structural  Similarity  To  Autoencoders](https://arxiv.org/pdf/1807.02011.pdf)
+   Structured loss
+ * [Explainable Deep One-Class Classification](https://arxiv.org/pdf/2007.01760.pdf)
+ 
 
 * Features of Pre-trained Convolutional NeuralNetworks
+  
+
 
 * Traditional Methods 
 
@@ -34,6 +58,9 @@ Segmentation of Anomalous Regions
      interpretation using attention mechanisms
      
   * self-supervision
+  
+* Patch:
+  [Anomaly Detection in Nanofibrous Materials byCNN-Based Self-Similarity](file:///tmp/mozilla_yi0/sensors-18-00209-v2.pdf)
   
 Small Object Detection
 =======
@@ -69,8 +96,10 @@ From the point of loss
    dice+ce loss
    Median frequency balanc-ing weights the class loss by the ratio of the median classfrequency in the training set and the actual class frequency
 
+其他：
 
-
+ mIOU一般都是基于类进行计算的，将每一类的IOU计算之后累加，再进行平均，得到的就是基于全局的评价。
+ 
 Fine Grain
 
 Small object Detection
