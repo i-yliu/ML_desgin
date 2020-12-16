@@ -16,6 +16,9 @@ Types of defect:
 Other things that might help:
  Domain adapation 
  Domain Generaziation
+ Radiography
+ ultrasonic testing
+ thermogpraghy
  
  
 
