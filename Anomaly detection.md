@@ -8,8 +8,15 @@ Attention
 The problem of long sequences 
 
 
-
-
+Types of defect:
+ * Textures
+ * Objects deformation
+ * unexpected patterns
+ 
+Other things that might help:
+ Domain adapation 
+ Domain Generaziation
+ 
  
 
 
@@ -19,7 +26,7 @@ The problem of long sequences
 
 Traditional methods
 =======
-
+Gaussian blur Might help.
 
 
 Classification of Anomalous Images
