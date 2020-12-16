@@ -28,12 +28,13 @@ To do:
   
   * Online data collection through a user's interaction with the system in place
   * Human labelers (offline)
-    * Crowdsourcing
-    * Specialized labelers
-    * Open-source dataset
-    * Build the product in a way that it collects data from users
-    * Creative manual expansion (data augmentation)
-    * Data expansion using GANs (For image translation)
+  
+   * Crowdsourcing
+   * Specialized labelers
+   * Open-source dataset
+   * Build the product in a way that it collects data from users
+   * Creative manual expansion (data augmentation)
+   * Data expansion using GANs (For image translation)
     
   
   Train, test, & validation splits
