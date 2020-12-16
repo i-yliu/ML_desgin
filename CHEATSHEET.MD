@@ -31,6 +31,7 @@ GOOGLE pedphile 事件
   Metrics:
   
 正常广告推送：
+  [img!](./guanggao.png )
   
 
 其他
