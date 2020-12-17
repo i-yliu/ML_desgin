@@ -17,6 +17,23 @@ To do:
   
 植物前期病变
 ========
+1. 植物 细菌感染
+Goal：
+
+      1.cotrol/test -> 量化他们的结构的变化，filamentous structure 的长度，数量， 等等
+      2. anomaly detection: 检测 filament 的亮度 和 长度; tracking
+      3. clustering; two ways: 
+          1. curve clustering fit curve
+          2. gaussian mixture model get the area; and cauclate percentage per cell
+          
+      2. length, intensity; curvature:number of extremae cruvure points (larger than certain threshold); orientation anlge. 
+     
+      3. 量化分析,如何描述他们的变化？ clustering; filament， bag of word; 分类; cosine simliarty
+    
+      5. 那现在我们在做的就是 如何描述pattern 的变化
+      6. evaluation: 合成图像
+      
+      
 The pattern of cells filamentous structures will change
 
 广告安全：
@@ -25,7 +42,7 @@ GOOGLE pedphile 事件
 
 不适信息检测：推送合适广告
   1. post -> feature
-  2. 
+  2. 高端品盘和马桶放一起等等
 
 危险信息检测/负面信息检测;
 
@@ -34,6 +51,7 @@ GOOGLE pedphile 事件
   Problem statement
   Metrics:
   
+
   
 正常广告推送：
   ![img](./guanggao.png )
@@ -48,12 +66,18 @@ GOOGLE pedphile 事件
     2. Advertiser specific features
 
     3. User specific features
+      age,年龄，国家，性别，使用时间，historgram 等等各种过去频率统计
 
     4. Context specific features
+      season_of_the_year；upcoming_holiday；days_to_upcoming_holiday
 
     7. User-ad cross features
 
     6. User-advertiser cross features
+  
+  Ad selection:
+    
+    So, the above selection criteria in phase 1 will reduce our space set from all active ads to ads that are targeted for the current user.
 
   
   
