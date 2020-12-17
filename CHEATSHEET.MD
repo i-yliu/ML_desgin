@@ -14,6 +14,10 @@ To do:
   12. 情感分析
   13. https://towardsdatascience.com/deep-surveillance-6b389abeaf95
   14. 
+  
+植物前期病变
+========
+The pattern of cells filamentous structures will change
 
 广告安全：
 =========
@@ -30,10 +34,29 @@ GOOGLE pedphile 事件
   Problem statement
   Metrics:
   
+  
 正常广告推送：
   ![img](./guanggao.png )
+  1. Ad selection: The ad selection component will fetch the top k ads based on relevance (subject to the user context) and bid from the ads index.
+  2. Ad prediction The ad prediction component will predict user engagement with the ad (the probability that an action will be taken on the ad if it is shown), given the ad, advertiser, user, and context. Then, it will rank ads based on relevance score and bid.
+  3. Ads auction 
   
+  Feature Engineering:
+  
+    1. Ad specific features
 
+    2. Advertiser specific features
+
+    3. User specific features
+
+    4. Context specific features
+
+    7. User-ad cross features
+
+    6. User-advertiser cross features
+
+  
+  
 其他
 =========
   
